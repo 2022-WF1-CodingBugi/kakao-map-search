@@ -1,0 +1,80 @@
+body {
+    font-family: "foodListFont";
+}
+
+.Food-List-Container {
+    text-align: center;
+    display: inline-block;
+
+    background-image: url("../../Resources/Images/background-image/item-list-background.png");
+    background-size: cover;
+    background-position: center;
+
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 40px; */
+
+    width: 40%;
+    height: 500px;
+    margin: 0 auto;
+
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.Food-List-Container::-webkit-scrollbar {
+    display: none;
+}
+
+.Food-List-Item {
+    text-align: justify;
+
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: white;
+
+    border-radius: 20px;
+    box-shadow: 5px 6px 5px 3px darkgrey;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Food-List-Item:hover {
+    box-shadow: 5px 5px 3px 3px gray;
+    white-space: pre-wrap;
+}
+
+@font-face {
+    font-family: "foodListFont";
+    src: url("../../Resources/Fonts/EF_Diary.ttf")format("truetype");
+}
+
+.Food-List-Item-Image {
+    width: 60%;
+    padding-top: 20px;
+}
+
+.Food-List-Item-Image-div {
+    display: none;
+    width: 75%;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.Food-List-Item:hover~.Food-List-Item-Image-div {
+    display: block;
+}

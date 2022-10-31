@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Map from "../Components/Map/Map";
 import { sampledata } from "../Data/SampleData";
+import FoodList from "../Components/FoodList/FoodList";
 
 const MapDiv = () => {
     const [inputText, setInputText] = useState("");
@@ -17,6 +18,7 @@ const MapDiv = () => {
         } else {
             setPlace("")
         }
+
         setInputText("");
     };
 
@@ -38,6 +40,7 @@ const MapDiv = () => {
                 <button type="reset">초기화</button>
             </form>
             <Map searchPlaces={place} />
+            <FoodList />
         </>
     );
 };
